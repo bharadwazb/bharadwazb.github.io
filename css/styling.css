@@ -85,7 +85,7 @@ html {
     width: 57px;
     height: 57px;
     border-radius: 60%;
-    padding-right: 5%; 
+    padding-right: 5%;
     align-items: center;
     overflow: hidden;
     vertical-align: middle;
@@ -98,22 +98,10 @@ html {
     padding-top:5%;
 }
 
-.jobInfoMisc{
-    float: left;
-    font-size: small;
-}
 
-.jobDuration{
-    padding-left: 10%;
-    float: left;
-}
-
-.location{
-    float: right;
-}
-
-.jobDetails{
-    padding-top: 10%;
+.office{
+  float: left;
+  padding-right: 2%
 }
 
 .experienceAt{
