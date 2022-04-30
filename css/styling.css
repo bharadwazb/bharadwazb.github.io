@@ -1,14 +1,15 @@
 
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Arial, Lucida, Impact, Times New Roman, Courier New, Tahoma, Comic Sans, Verdana, Georgia, Garamond, sans-sans-serif";
     /* background-color: rgb(31, 28, 28); */
     /* color: white; */
 }
 
 html {
-    width:  210mm;
+    width:  300mm;
     height: 297mm;
-    margin-left: 2%;
+    /* margin-left: 2%; */
+    align-items: center;
 }
 
 #logoImage{
@@ -36,9 +37,30 @@ html {
 
 .office{
   float: left;
-  padding-right: 2%
+  /* padding-right: 2% */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* margin-right: 1%; */
+  height: 200px;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: small;
+
+  /* padding-left: auto;
+  padding-right: auto; */
 }
 
+.office > h4{
+    text-align: center;
+}
+.linkToCareerDetails{
+
+  position: relative;
+  bottom: 0;
+  margin-bottom: : 10px;
+}
 .experienceAt{
     border-bottom: 0.5px solid black;
     margin-right:20%;
