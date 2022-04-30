@@ -1,0 +1,17 @@
+.jobInfoMisc{
+    float: left;
+    font-size: small;
+}
+
+.jobDuration{
+    padding-left: 10%;
+    float: left;
+}
+
+.location{
+    float: right;
+}
+
+.jobDetails{
+    padding-top: 10%;
+}
