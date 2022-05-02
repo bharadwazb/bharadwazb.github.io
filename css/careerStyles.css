@@ -1,3 +1,30 @@
+*{
+    font-family: "Arial, Lucida, Impact, Times New Roman, Courier New, Tahoma, Comic Sans, Verdana, Georgia, Garamond, sans-sans-serif";
+    /* background-color: rgb(31, 28, 28); */
+    /* color: white; */
+}
+html {
+    width:  300mm;
+    height: 297mm;
+    /* margin-left: 2%; */
+    align-items: center;
+}
+.resume{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  justify-content: space-space-between;
+}
+
+.personalProfile{
+  flex-basis: 30%;
+  padding-right: 5%;
+}
+
+.careerProfile{
+  flex-basis: 65%;
+}
+
 .jobInfoMisc{
     float: left;
     font-size: small;
