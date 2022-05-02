@@ -1,3 +1,10 @@
+*{
+    font-family: "Arial, Lucida, Impact, Times New Roman, Courier New, Tahoma, Comic Sans, Verdana, Georgia, Garamond, sans-sans-serif";
+    /* background-color: rgb(31, 28, 28); */
+    /* color: white; */
+}
+
+
 #name{
   font-size:150%;
 }
@@ -11,7 +18,10 @@
   flex-direction: column;
   /* align-items: center;[] */
   justify-content: center;
+  color: white;
 }
+
+
 
 .contanctDetails{
     padding-top: 20%;
@@ -68,6 +78,8 @@
 .profileInner{
     padding-bottom: 4%;
     border-bottom: 0.5px solid black;
+    background-color: rgb(51, 57, 51);
+    border-radius: 5px;
 }
 
 #socialProfiles{
@@ -93,12 +105,12 @@
     padding-top:5%;
 }
 
-.achievementsList{
+ul{
   list-style: none;
   padding:0;
   margin: 0;
 }
 
-.achievementsList > li{
+li{
   margin: 5% 2%;
 }
