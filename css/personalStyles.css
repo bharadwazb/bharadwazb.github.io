@@ -4,7 +4,13 @@
     /* color: white; */
 }
 
+html{
+  overflow:hidden;
+  width:  96%;
+  height: 96%;
+  scroll:yes;
 
+}
 #name{
   font-size:150%;
 }

@@ -4,10 +4,13 @@
     /* color: white; */
 }
 html {
-    width:  300mm;
-    height: 297mm;
-    /* margin-left: 2%; */
-    align-items: center;
+  width:  96%;
+  height: 96%;
+  align-items: center;
+  background-color: rgba(2.5,5,2.5,1);
+  color: white;
+  margin: 2% 2%;
+
 }
 .resume{
   display: flex;
