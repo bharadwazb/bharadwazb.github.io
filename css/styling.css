@@ -37,7 +37,7 @@ html {
   background-image: linear-gradient(to right, rgb(51, 57, 51), rgb(10,15,10));
   color: white;
   padding: 5px 5px;
-  font-size: 95%;
+  font-size: 1.25vw;
 
 }
 .personalProfile{
@@ -70,7 +70,7 @@ html {
   margin-bottom: 2%;
   color: white;
   text-align: center;
-  height: 50%;
+  height: 48%;
   display: flex;
   justify-content: space-around;
   flex-direction: column;

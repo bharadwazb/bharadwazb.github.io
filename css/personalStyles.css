@@ -9,14 +9,15 @@ html{
   width:  96%;
   height: 96%;
   scroll:yes;
+  font-size: 4vw;
 
 }
 #name{
-  font-size:150%;
+  font-size:7vw;
 }
 
 #profession{
-  font-size:120%;
+  font-size:5vw;
 }
 
 .personalProfileDetails{
