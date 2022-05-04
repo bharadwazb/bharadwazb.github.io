@@ -9,7 +9,7 @@ html{
   width:  96%;
   height: 96%;
   scroll:yes;
-  font-size: 4vw;
+  font-size: 5vw;
 
 }
 #name{
@@ -24,7 +24,8 @@ html{
   display: flex;
   flex-direction: column;
   /* align-items: center;[] */
-  justify-content: center;
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
   color: white;
 }
 
@@ -64,7 +65,7 @@ html{
   text-align: left;
   padding-left: 10%;
   /* margin: 0; */
-
+  /* font-size: small; */
 }
 
 .profilePicImage{
@@ -85,12 +86,19 @@ html{
     border-bottom: 0.5px solid black;
     background-image: linear-gradient(to right, rgb(51, 57, 51), rgb(10,15,10));
     border-radius: 5px;
+    /* margin-top: 5%; */
+    margin-bottom: 10%;
 }
 
 #socialProfiles{
     padding: 3% 0.5% 3% 0.5%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: nowrap;
+    /* display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "linkedin github leetcode"; */
 }
 
 .socialProfileImages{
@@ -102,6 +110,10 @@ html{
     overflow: hidden;
     vertical-align: middle;
     object-fit: cover;
+
+    /* width:57%;
+    height:57%;
+    border-radius: 50%; */
 
 }
 

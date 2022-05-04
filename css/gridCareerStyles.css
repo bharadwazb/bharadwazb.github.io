@@ -1,0 +1,42 @@
+*{
+    font-family: "Arial, Lucida, Impact, Courier New, Tahoma, Comic Sans, Verdana, Georgia, Garamond, sans-sans-serif";
+    /* background-color: rgb(31, 28, 28); */
+    /* color: white; */
+
+}
+
+a{
+  color: yellow;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+html{
+  color:white;
+  background-color: rgba(2.5,5,2.5,1);
+  width: 96vw;
+  height: 96vh;
+  margin: 2vh 2vw;
+
+}
+
+.personalProfile{
+    grid-area: personalProfileVar;
+    /* background-image: linear-gradient(to right, rgb(51, 57, 51), rgb(10,15,10)); */
+}
+
+.resume{
+  display: grid;
+  grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
+  grid-template-rows: 0.2fr 0.5fr 0.3fr;
+  grid-template-areas:  " . personalProfileVar . careerProfileVar . "
+                        " . personalProfileVar . careerProfileVar . "
+                        " . personalProfileVar . careerProfileVar . ";
+}
+
+.careerProfile{
+  grid-area: careerProfileVar;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
