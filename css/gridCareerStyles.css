@@ -1,7 +1,7 @@
 *{
     font-family: "Arial, Lucida, Impact, Courier New, Tahoma, Comic Sans, Verdana, Georgia, Garamond, sans-sans-serif";
     /* background-color: rgb(31, 28, 28); */
-    /* color: white; */
+    color: white;
 
 }
 
@@ -41,14 +41,19 @@ html{
 
 }
 
+.comapanyName{
+  grid-area: comapanyNameVar;
+}
+
 .resume{
   display: grid;
   grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
-  grid-template-rows:  0.02fr 0.38fr 0.5fr 0.1fr;
+  grid-template-rows:  0.02fr 0.16fr 0.16fr 0.5fr 0.1fr;
   grid-template-areas:  ". navigationVar navigationVar navigationVar ."
-                        " . personalProfileVar . . . "
-                        " . personalProfileVar . . . "
-                        " . personalProfileVar . careerProfileVar . ";
+                        " . personalProfileVar . comapanyNameVar . "
+                        " . personalProfileVar . keyTechnologiesVar . "
+                        " . personalProfileVar . careerProfileVar . "
+                        " . personalProfileVar . . . ";
 }
 
 .careerProfile{
@@ -77,6 +82,27 @@ html{
   flex-direction: row;
   justify-content: space-between;
   margin: 1%;
+}
+
+.keyTechnologies{
+  grid-area: keyTechnologiesVar;
+}
+
+.keyTechologiesList{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.keyTechologiesList > li{
+  color: yellow;
+}
+
+ul.keyTechologiesList > li:before{
+  content: "#";
+  float: left;
 }
 
 .jobRole > ul{

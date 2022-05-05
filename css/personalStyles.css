@@ -117,7 +117,17 @@ html{
     /* width:57%;
     height:57%;
     border-radius: 50%; */
+}
 
+.fa{
+  font-size: 3em !important;
+  color: white;
+  /* width: 50px; */
+}
+
+.fa:hover{
+  /* visibility:visible; */
+  transform: scale(1,1.5);
 }
 
 .skills{
