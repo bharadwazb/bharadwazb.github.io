@@ -106,11 +106,30 @@ html{
   padding-right: 40%;
 }
 
+.navigation{
+  grid-area: navigationVar;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: #282a35; */
+
+}
+
+.navigation > a{
+  /* right: 0; */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: large;
+
+}
+
 .resume{
   display: grid;
   grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
-  grid-template-rows: 0.2fr 0.5fr 0.3fr;
-  grid-template-areas:  " . personalProfileVar . careerProfileVar . "
+  grid-template-rows: 0.02fr 0.18fr 0.5fr 0.3fr;
+  grid-template-areas:  " . navigationVar navigationVar navigationVar ."
+                        " . personalProfileVar . careerProfileVar . "
                         " . personalProfileVar . careerProfileVar . "
                         " . personalProfileVar . careerProfileVar . ";
 }

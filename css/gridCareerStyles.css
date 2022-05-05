@@ -25,12 +25,29 @@ html{
     /* background-image: linear-gradient(to right, rgb(51, 57, 51), rgb(10,15,10)); */
 }
 
+.navigation{
+  grid-area: navigationVar;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation > a{
+  /* right: 0; */
+  font-weight: bold;
+  text-decoration: none;
+  font-size: large;
+
+}
+
 .resume{
   display: grid;
   grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
-  grid-template-rows: 0.2fr 0.5fr 0.3fr;
-  grid-template-areas:  " . personalProfileVar . careerProfileVar . "
-                        " . personalProfileVar . careerProfileVar . "
+  grid-template-rows:  0.02fr 0.38fr 0.5fr 0.1fr;
+  grid-template-areas:  ". navigationVar navigationVar navigationVar ."
+                        " . personalProfileVar . . . "
+                        " . personalProfileVar . . . "
                         " . personalProfileVar . careerProfileVar . ";
 }
 
@@ -38,5 +55,45 @@ html{
   grid-area: careerProfileVar;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  justify-content: space-between;
+  /* align-items: flex-end; */
+}
+
+.jobDetails{
+  border-bottom: 0.5px solid black;
+  background-image: linear-gradient(to right, rgb(51, 57, 51), rgb(10,15,10));
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.jobDetails:not(:first-child){
+  align-self: center;
+}
+
+.jobInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1%;
+}
+
+.jobRole > ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+li{
+  margin: 0.5%;
+  /* background-image: linear-gradient(red, orange); */
+}
+
+h3{
+   border-bottom: 2px solid white;
+   padding: 1px;
+   /* padding-top: 5%; */
 }

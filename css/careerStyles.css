@@ -16,7 +16,7 @@ html {
   display: flex;
   flex-direction: row;
   flex-grow: 0;
-  justify-content: space-space-between;
+  justify-content: space-between;
 }
 
 .personalProfile{
