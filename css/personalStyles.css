@@ -9,7 +9,7 @@ html{
   width:  96%;
   height: 96%;
   scroll:yes;
-  font-size: 5vw;
+  font-size: 1rem;
 
 }
 #name{
@@ -64,6 +64,9 @@ html{
 
   text-align: left;
   padding-left: 10%;
+  font-size: 0.8rem;
+  width: 30%;
+  height: 30%;
   /* margin: 0; */
   /* font-size: small; */
 }
@@ -114,7 +117,17 @@ html{
     /* width:57%;
     height:57%;
     border-radius: 50%; */
+}
 
+.fa{
+  font-size: 3em !important;
+  color: white;
+  /* width: 50px; */
+}
+
+.fa:hover{
+  /* visibility:visible; */
+  transform: scale(1,1.5);
 }
 
 .skills{
