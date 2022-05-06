@@ -133,13 +133,17 @@ html{
                         " . personalProfileVar . careerProfileVar . ";
 }
 
+.linkToCareerDetails > a{
+  font-weight: bold;
+  font-size: x-small;
+  text-decoration: none;
+  text-shadow: 1px;
+}
 .careerProfile{
   grid-area: careerProfileVar;
   display: flex;
   flex-direction: column;
 }
-
-
 h3{
    border-bottom: 2px solid white;
    padding: 1px;
