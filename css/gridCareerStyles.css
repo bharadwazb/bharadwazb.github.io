@@ -6,7 +6,7 @@
 }
 
 a{
-  color: yellow;
+  color: yellow !important;
   text-transform: uppercase;
   font-size: small;
 }
