@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
 
 <body>
@@ -23,13 +24,13 @@
 
       <h1>Contact Me</h1>
 
-      <form>
+      <form method="post">
 
           <div class="field"><input id="nameField" type="text" placeholder="Name"></input></div>
           <div class="field"><input id="emailField" type="email" placeholder="Email"></input></div>
           <div class="field"><textarea name="Subject" id="subjectField" rows="1" cols="30" placeholder="Subject"></textarea></div>
           <div class="field"><textarea name="Body" id="messageField" rows="5" cols="30" placeholder="Message. Please enter a min of 50 characters."></textarea></div>
-          <div class="field"><button id="submit">Submit</button></div>
+          <div class="field"><button id="submitBut">Submit</button></div>
 
       </form>
 
@@ -37,7 +38,8 @@
 
     </div>
 
-    <script src="../js/SendMail.js"></script>
+    <script type="text/javascript" src="../js/SendMail.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 

@@ -1,9 +1,9 @@
-var submitButt = document.getElementById('submit');
-var emailId = document.getElementById('emailField');
-var message = document.getElementById('messageField');
-var subject = document.getElementById('subjectField');
-var name = document.getElementById('nameField');
-var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+const submitButt = document.getElementById('submitBut');
+const emailId = document.getElementById('emailField');
+const message = document.getElementById('messageField');
+const subject = document.getElementById('subjectField');
+const name = document.getElementById('nameField');
+const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 var isValidEmail= (emailFrom) => {
 
@@ -14,24 +14,31 @@ var isValidEmail= (emailFrom) => {
   return false;
 };
 
-var retainMessageAndSubject = () =>{
-  subject.value = subject.value;
-  message.value = message.value;
-}
+var stopRefresh = (event) =>{
+  event.preventDefault();
+};
 
-submitButt.onclick = function(){
-    // check for validity of the email first
+var sendEmail = (event, fromName, fromEmail, sub, msg)=>{
+  window.open('mailto:bhumabharadwaz@gmail.com?subject=sub&body=msg');
+};
+
+submitButt.onclick = function(event){
+
     var isValid = isValidEmail(emailId.value.trim());
     if(!isValid){
-      console.log("is invalid");
       window.alert(emailId.value.trim() + " is not a valid email, Please enter a valid email");
       emailId.value = "";
-      retainMessageAndSubject();
+      stopRefresh(event);
+
     }else if(message.value.trim().length < 100 || subject.value.trim().length <= 0){
+
         window.alert("Either Message is less than 50 characters or Subject line is empty!");
-        retainMessageAndSubject();
+        stopRefresh(event);
     }else{
 
+        console.log("Submitting");
+        window.open('mailto:bharadwazbhuma98@yahoo.com?subject='+subject.value+'&body='+message.value);
+        // stopRefresh(event);
     }
 
 }
