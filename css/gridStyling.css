@@ -5,8 +5,9 @@
 
 }
 
+
 a{
-  color: yellow;
+  color: yellow !important;
   text-transform: uppercase;
   font-size: small;
 }
@@ -18,6 +19,16 @@ html{
   height: 96vh;
   margin: 2vh 2vw;
 
+}
+
+.resume{
+  display: grid;
+  grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
+  grid-template-rows: 0.02fr 0.18fr 0.5fr 0.3fr;
+  grid-template-areas:  " . navigationVar navigationVar navigationVar ."
+                        " . personalProfileVar . careerProfileVar . "
+                        " . personalProfileVar . careerProfileVar . "
+                        " . personalProfileVar . careerProfileVar . ";
 }
 
 .personalProfile{
@@ -82,12 +93,14 @@ html{
 .publication{
 
   flex-basis: 100%;
-  height: 48%;
+  height: 49%;
   display: flex;
   flex-direction: column;
   /* background-color: rgb(51, 57, 51); */
   background-image: linear-gradient(to right, rgb(51, 57, 51), rgb(10,15,10));
   border: 1px solid black;
+  margin-bottom: 1%;
+  border-radius: 5px;
 }
 
 .publicationName{
@@ -98,6 +111,8 @@ html{
 }
 .publishInfo{
   float: left;
+  margin-top: -1.5%;
+  margin-bottom: -1.5%;
   /* margin-right: 60%; */
 }
 .publishDate{
@@ -123,15 +138,7 @@ html{
 
 }
 
-.resume{
-  display: grid;
-  grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
-  grid-template-rows: 0.02fr 0.18fr 0.5fr 0.3fr;
-  grid-template-areas:  " . navigationVar navigationVar navigationVar ."
-                        " . personalProfileVar . careerProfileVar . "
-                        " . personalProfileVar . careerProfileVar . "
-                        " . personalProfileVar . careerProfileVar . ";
-}
+
 
 .linkToCareerDetails > a{
   font-weight: bold;
