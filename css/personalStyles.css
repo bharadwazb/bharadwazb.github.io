@@ -54,11 +54,7 @@ html{
 
 }
 
-/* .personalDetails{
-  align-items: center;
-  border: 1px solid gold;
 
-} */
 
  td{
 
@@ -91,6 +87,8 @@ html{
     border-radius: 5px;
     /* margin-top: 5%; */
     margin-bottom: 10%;
+    border: 1px solid #6C6A28;
+    box-shadow : 2px;
 }
 
 #socialProfiles{

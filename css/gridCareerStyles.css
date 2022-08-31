@@ -48,7 +48,7 @@ html{
 .resume{
   display: grid;
   grid-template-columns: 0.05fr 0.25fr 0.05fr 0.7fr 0.05fr;
-  grid-template-rows:  0.02fr 0.16fr 0.16fr 0.5fr 0.1fr;
+  grid-template-rows:  0.02fr 0.26fr 0.16fr 0.5fr 0.1fr;
   grid-template-areas:  ". navigationVar navigationVar navigationVar ."
                         " . personalProfileVar . comapanyNameVar . "
                         " . personalProfileVar . keyTechnologiesVar . "
