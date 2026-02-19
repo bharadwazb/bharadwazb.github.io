@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 // Change this before deploying to GitHub Pages
 export default defineConfig({
     plugins: [react()],
-    base: '/bharadwazb/',
+    base: '/',
 })
