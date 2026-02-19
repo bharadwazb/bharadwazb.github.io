@@ -1,4 +1,5 @@
 const EDUCATION = [
+
     {
         level: 'Postgraduate — M.Tech.',
         institution: 'BITS Pilani',
